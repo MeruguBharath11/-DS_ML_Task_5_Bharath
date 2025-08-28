@@ -1,0 +1,75 @@
+
+======================================================================
+BASELINE: RandomForest on ALL standardized features
+Accuracy: 0.9474
+Classification report:
+              precision    recall  f1-score   support
+
+           0     0.9231    1.0000    0.9600        72
+           1     1.0000    0.8571    0.9231        42
+
+    accuracy                         0.9474       114
+   macro avg     0.9615    0.9286    0.9415       114
+weighted avg     0.9514    0.9474    0.9464       114
+
+Confusion matrix:
+[[72  0]
+ [ 6 36]]
+
+======================================================================
+FILTER: RandomForest on Chi2-selected features
+Selected features (10): ['area_mean', 'smoothness_mean', 'compactness_mean', 'concave points_mean', 'radius_se', 'perimeter_se', 'area_se', 'concave points_se', 'area_worst', 'concave points_worst']
+Accuracy: 0.9298
+Classification report:
+              precision    recall  f1-score   support
+
+           0     0.9444    0.9444    0.9444        72
+           1     0.9048    0.9048    0.9048        42
+
+    accuracy                         0.9298       114
+   macro avg     0.9246    0.9246    0.9246       114
+weighted avg     0.9298    0.9298    0.9298       114
+
+Confusion matrix:
+[[68  4]
+ [ 4 38]]
+
+======================================================================
+WRAPPER: RandomForest on RFE-selected features
+Selected features (10): ['radius_mean', 'texture_mean', 'concave points_mean', 'radius_se', 'perimeter_se', 'area_se', 'symmetry_se', 'radius_worst', 'area_worst', 'symmetry_worst']
+Accuracy: 0.9474
+Classification report:
+              precision    recall  f1-score   support
+
+           0     0.9342    0.9861    0.9595        72
+           1     0.9737    0.8810    0.9250        42
+
+    accuracy                         0.9474       114
+   macro avg     0.9539    0.9335    0.9422       114
+weighted avg     0.9488    0.9474    0.9468       114
+
+Confusion matrix:
+[[71  1]
+ [ 5 37]]
+
+======================================================================
+EMBEDDED: RandomForest on L1-selected features
+Selected features (10): ['symmetry_worst', 'radius_se', 'area_se', 'perimeter_se', 'radius_mean', 'radius_worst', 'area_worst', 'concave points_worst', 'symmetry_se', 'texture_mean']
+Accuracy: 0.9386
+Classification report:
+              precision    recall  f1-score   support
+
+           0     0.9333    0.9722    0.9524        72
+           1     0.9487    0.8810    0.9136        42
+
+    accuracy                         0.9386       114
+   macro avg     0.9410    0.9266    0.9330       114
+weighted avg     0.9390    0.9386    0.9381       114
+
+Confusion matrix:
+[[70  2]
+ [ 5 37]]
+
+========================================================================
+Best setting: Baseline (All)
+accuracy: 0.947
