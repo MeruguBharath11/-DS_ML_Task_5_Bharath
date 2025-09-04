@@ -1,4 +1,3 @@
-featureselection__task_2_shivareddy
 Feature Selection Methods and High Accuracy ML Model In this task, I worked on the Breast Cancer Dataset (from Kaggle) to apply three feature selection techniques and then train a Machine Learning model that achieves more than 90% accuracy.
 
 The goal of this project is to: Understand and apply different feature selection methods. Compare which features are most important for predicting breast-cancer. Build a classification model that can accurately predict whether a tumor is benign or malignant.
@@ -20,4 +19,5 @@ Before modeling, I cleaned the dataset in MSExcel: Checked for missing/blank val
 pandas
 matplotlib
 seaborn
+
 scikit-learn
